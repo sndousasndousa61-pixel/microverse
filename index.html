@@ -4,21 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MICROVERSE | Virtual Microbiology Laboratory</title>
+
+    <title>MICROVERSE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:
+                radial-gradient(circle at center, #123b3b 0%, #071b1b 45%, #020909 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .welcome {
+            padding: 30px;
+            max-width: 800px;
+        }
+
+        .lab-icon {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 10vw, 100px);
+            letter-spacing: 12px;
+            margin-bottom: 12px;
+            color: #dfffe9;
+            text-shadow: 0 0 25px rgba(80, 255, 190, 0.35);
+        }
+
+        .subtitle {
+            font-size: 15px;
+            letter-spacing: 5px;
+            color: #7ee8c1;
+            margin-bottom: 45px;
+        }
+
+        .tagline {
+            font-size: clamp(20px, 4vw, 32px);
+            margin-bottom: 45px;
+            color: #e8fff4;
+        }
+
+        .enter-btn {
+            border: 1px solid #54d9a5;
+            background: rgba(20, 70, 60, 0.45);
+            color: white;
+            padding: 17px 42px;
+            border-radius: 8px;
+            font-size: 15px;
+            letter-spacing: 3px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .enter-btn:hover {
+            background: #54d9a5;
+            color: #03110d;
+            box-shadow: 0 0 30px rgba(84, 217, 165, 0.45);
+            transform: translateY(-2px);
+        }
+
+        .status {
+            margin-top: 45px;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #668b82;
+        }
+    </style>
 </head>
 
 <body>
 
-    <main>
+    <section class="welcome">
+
+        <div class="lab-icon">🧬</div>
+
         <h1>MICROVERSE</h1>
 
-        <p>VIRTUAL MICROBIOLOGY LABORATORY</p>
+        <div class="subtitle">
+            VIRTUAL MICROBIOLOGY LABORATORY
+        </div>
 
-        <p>Enter the Lab. Solve the Unknown.</p>
+        <div class="tagline">
+            Enter the Lab. Solve the Unknown.
+        </div>
 
-        <button>ENTER THE LAB</button>
-    </main>
+        <button class="enter-btn">
+            ENTER THE LAB
+        </button>
+
+        <div class="status">
+            SYSTEM READY • LAB ONLINE
+        </div>
+
+    </section>
 
 </body>
 
-</html>
+    </html>
