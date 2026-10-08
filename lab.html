@@ -4,15 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MICROVERSE | Lab</title>
+
+    <title>MICROVERSE</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    #123b3b 0%,
+                    #071b1b 45%,
+                    #020909 100%
+                );
+
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .welcome {
+            padding: 30px;
+            max-width: 850px;
+            width: 100%;
+        }
+
+        .lab-icon {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 10vw, 100px);
+            letter-spacing: 12px;
+            margin-bottom: 15px;
+
+            color: #dfffe9;
+
+            text-shadow:
+                0 0 15px rgba(80, 255, 190, 0.25),
+                0 0 35px rgba(80, 255, 190, 0.15);
+        }
+
+        .subtitle {
+            font-size: 15px;
+            letter-spacing: 5px;
+            color: #7ee8c1;
+            margin-bottom: 45px;
+        }
+
+        .tagline {
+            font-size: clamp(20px, 4vw, 32px);
+            margin-bottom: 45px;
+            color: #e8fff4;
+        }
+
+        .enter-btn {
+            display: inline-block;
+
+            padding: 17px 42px;
+
+            border: 1px solid #54d9a5;
+            border-radius: 8px;
+
+            background: rgba(20, 70, 60, 0.45);
+
+            color: white;
+            text-decoration: none;
+
+            font-size: 15px;
+            letter-spacing: 3px;
+
+            transition: 0.3s;
+        }
+
+        .enter-btn:hover {
+            background: #54d9a5;
+            color: #03110d;
+
+            box-shadow:
+                0 0 20px rgba(84, 217, 165, 0.35),
+                0 0 45px rgba(84, 217, 165, 0.20);
+
+            transform: translateY(-2px);
+        }
+
+        .status {
+            margin-top: 45px;
+
+            font-size: 11px;
+            letter-spacing: 3px;
+
+            color: #668b82;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                letter-spacing: 6px;
+            }
+
+            .subtitle {
+                font-size: 11px;
+                letter-spacing: 3px;
+            }
+
+            .tagline {
+                font-size: 21px;
+            }
+
+            .enter-btn {
+                padding: 15px 30px;
+                font-size: 13px;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-    <h1>MICROVERSE LAB</h1>
+    <main class="welcome">
 
-    <p>Laboratory environment loading...</p>
+        <div class="lab-icon">
+            🧬
+        </div>
+
+        <h1>
+            MICROVERSE
+        </h1>
+
+        <div class="subtitle">
+            VIRTUAL MICROBIOLOGY LABORATORY
+        </div>
+
+        <div class="tagline">
+            Enter the Lab. Solve the Unknown.
+        </div>
+
+        <a href="lab.html" class="enter-btn">
+            ENTER THE LAB
+        </a>
+
+        <div class="status">
+            SYSTEM READY • LAB ONLINE
+        </div>
+
+    </main>
 
 </body>
 
-</html>
+    </html>
